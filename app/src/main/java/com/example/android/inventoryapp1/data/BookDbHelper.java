@@ -13,8 +13,10 @@ public class BookDbHelper extends SQLiteOpenHelper {
 
     public static final String LOG_TAG = BookDbHelper.class.getSimpleName();
 
-    /** Name of the database file */
-    private static final String DATABASE_NAME = "shelter.db";
+    /**
+     * Name of the database file
+     */
+    private static final String DATABASE_NAME = "books.db";
 
     /**
      * Database version. If you change the database schema, you must increment the database version.
@@ -54,6 +56,5 @@ public class BookDbHelper extends SQLiteOpenHelper {
      */
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // The database is still at version 1, so there's nothing to do be done here.
     }
 }
